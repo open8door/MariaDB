@@ -1,0 +1,26 @@
+MariaDB is an open development and standalone version of MySQL. Since the acquisition of MySQL by Oracle in September 2010, Monty Program as the initial author of 
+the MySQL source code has separated from development and created a more independent version, namely MariaDB.
+
+  ====  INSTALASI ====
+  
+    # sudo apt update
+    # sudo apt install mariadb-server
+  
+  ==== Create Password Root ====
+  
+    # sudo mysql_secure_installation
+  
+  ==== Create User Database MariaDB ====
+  
+    # sudo mysql -u root -p or mysql -u root -p
+    # GRANT ALL ON *.* TO 'admin'@'localhost' IDENTIFIED BY 'password' WITH GRANT OPTION;
+    # FLUSH PRIVILEGES;
+    # exit
+  
+  ==== Allow MariaDB User Root Database To PhpMyadmin ====
+  
+    # UPDATE mysql.user SET plugin = 'mysql_native_password' WHERE user = 'root';
+    # FLUSH PRIVILEGES;
+    # exit
+  
+THANK YOU VERY MUCH :
