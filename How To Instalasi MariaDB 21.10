@@ -1,7 +1,7 @@
 MariaDB is an open development and standalone version of MySQL. Since the acquisition of MySQL by Oracle in September 2010, Monty Program as the initial author of 
 the MySQL source code has separated from development and created a more independent version, namely MariaDB.
 
-  ====  INSTALASI ====
+  ====  Instalasi MariaDB ====
   
     # sudo apt update
     # sudo apt install mariadb-server
