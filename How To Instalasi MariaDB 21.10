@@ -19,6 +19,7 @@ the MySQL source code has separated from development and created a more independ
   
   ==== Allow MariaDB User Root Database To PhpMyadmin ====
   
+    # use mysql;
     # UPDATE mysql.user SET plugin = 'mysql_native_password' WHERE user = 'root';
     # FLUSH PRIVILEGES;
     # exit
